@@ -1,0 +1,213 @@
+@import url('../vendor/bootstrap/scss/bootstrap.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,800;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background: #16222A;
+   /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #3A6073, #16222A);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   font-family: "Poppins", sans-serif;
+}
+
+nav{
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .navbar-brand{
+        font-weight: 600;
+        border-radius: 5px;
+        color: white;
+        letter-spacing: 2px;
+
+        &:hover{
+            background: #114357;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F29492, #114357);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F29492, #114357);
+            
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+
+    .navbar-toggler-icon{
+        color: white;
+    }
+
+    .nav-item{
+        padding-right: 10px;
+
+        .nav-link{
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba($color: white, $alpha: 0.7);
+            font-family: 'Inconsolata',
+            sans-serif;
+
+            &:hover{
+                background: #114357;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #F29492, #114357);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #F29492, #114357);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+
+
+}
+
+.hero{
+    margin-top: 80px;
+    width: 100%;
+    transition: all .5s ease-in;
+    .hero-body{
+        margin-top: 80px;
+        margin-left: 5px;
+        border-left: 5px solid white;
+
+        p{
+            font-size: 20px;
+            color: #98c1d3;
+            font-family: 'Inconsolata', sans-serif;
+        }
+
+        h1{
+            font-size: 70px;
+            color: white;
+            font-weight: 600;
+        }
+        h2{
+            font-size: 35px;
+            color:#dfe9f5;
+            font-weight: 500;
+            
+        }
+
+        .hero-button{
+            display: inline;
+            line-height: 50px;
+            border-radius: 30px;
+            font-size: 20px;
+            padding: 9px;
+            color: rgb(223, 221, 221);
+           background: #114357;
+           /* fallback for old browsers */
+           background: -webkit-linear-gradient(to right, #F29492, #114357);
+           /* Chrome 10-25, Safari 5.1-6 */
+           background: linear-gradient(to right, #F29492, #114357);
+           /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+           &:hover{
+             background: rgba($color: white, $alpha: 0.6);        
+               
+           }
+        }
+    }
+    
+    .social-icons{
+        margin-top: 50px;
+        
+        i{
+            color: white;
+            width: 30px;
+
+            &:hover{
+               background: #114357;
+               /* fallback for old browsers */
+               background: -webkit-linear-gradient(to right, #F29492, #114357);
+               /* Chrome 10-25, Safari 5.1-6 */
+               background: linear-gradient(to right, #F29492, #114357);
+               /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+}
+
+.content{
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    .about-title{
+        h1{
+            color: white;
+            font-size: 40px;
+        }
+        hr{
+             border-top: 2px solid rgba($color: white, $alpha: 0.3);
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: space-between;
+        
+            i{
+                color:rgba($color: white, $alpha: 0.3);
+                &:hover{
+                     background: #114357;
+                     /* fallback for old browsers */
+                     background: -webkit-linear-gradient(to right, #F29492, #114357);
+                     /* Chrome 10-25, Safari 5.1-6 */
+                     background: linear-gradient(to right, #F29492, #114357);
+                     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                     -webkit-background-clip: text;
+                     color: transparent;
+                }
+            }
+        }
+        }
+
+        .about-text{
+            color: white;
+        }
+        
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 800px) {
+    .hero {
+        margin-top: 40px;
+        .hero-body {
+            p {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            h2{
+                font-size: 20px;
+            }
+}
+
+    }
+
+    .tools-icon{
+        display: none;
+    }
+
+}

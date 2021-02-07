@@ -1,0 +1,84 @@
+
+nav {
+        margin-top: 20px;
+        .nav-brand {
+        color: white;
+        font-family: 'Consolas', sans-serif;      
+    }
+
+    .nav-links {
+        width: 50%;
+        height: 100%;
+        color: white;
+        display: flex;
+        margin-left: auto;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Poppins',
+        sans-serif;
+        
+
+        .nav-item {
+            list-style-type: none;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+    .hamburger-icon {
+        display: none;
+        color: white;
+    }
+    }
+
+.landing{
+    margin-top: 50px;
+
+    .title{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: bolder;
+    }
+    .subtitle{
+        font-family: 'Poppins',
+        sans-serif;
+        color: transparent;
+        color: #c7d3df;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        .hamburger-icon {
+            display: inline;
+            position: absolute;
+            right: 5%;
+            top: 2%;
+            cursor: pointer;
+            transform: translate(-5%, 50%);
+            z-index: 2;
+        }
+        
+
+        
+        .nav-links {
+            position: fixed;
+            background: #2C5364;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -10%);
+            -webkit-clip-path: circle(100px at 90% -20%);
+            transition: all 1s ease-out;
+        
+            &.open{
+                 clip-path: circle(1000px at 80% -10%);
+                 -webkit-clip-path: circle(1000px at 80% -20%);
+            }
+        }
+    }
+}
