@@ -70,17 +70,17 @@ nav .nav-item .nav-link:hover {
   border-left: 5px solid white;
 }
 .hero .hero-body p {
-  font-size: 20px;
+  font-size: 25px;
   color: #98c1d3;
   font-family: "Inconsolata", sans-serif;
 }
 .hero .hero-body h1 {
-  font-size: 70px;
+  font-size: 90px;
   color: white;
   font-weight: 600;
 }
 .hero .hero-body h2 {
-  font-size: 35px;
+  font-size: 50px;
   color: #dfe9f5;
   font-weight: 500;
 }
@@ -155,13 +155,13 @@ nav .nav-item .nav-link:hover {
     margin-top: 40px;
   }
   .hero .hero-body p {
-    font-size: 16px;
+    font-size: 20px;
   }
   .hero .hero-body h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
   .hero .hero-body h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .tools-icon {
