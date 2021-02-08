@@ -61,7 +61,7 @@ nav .nav-item .nav-link:hover {
 }
 
 .hero {
-  margin-top: 50px;
+  margin-top: 70px;
   width: 100%;
   transition: all 0.5s ease-in;
 }
@@ -136,7 +136,7 @@ nav .nav-item .nav-link:hover {
 }
 
 .content-about {
-  margin-top: 150px;
+  margin-top: 130px;
   font-family: "Poppins", sans-serif;
 }
 .content-about .about-title h1 {
@@ -174,7 +174,7 @@ nav .nav-item .nav-link:hover {
 }
 
 .content-qualification {
-  margin-top: 150px;
+  margin-top: 130px;
   font-family: "poppins", sans-serif;
 }
 .content-qualification h1 {
