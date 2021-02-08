@@ -20,6 +20,7 @@ body {
 }
 
 nav{
+    border: none;
     background: #16222A;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3A6073, #16222A);
@@ -77,7 +78,7 @@ nav{
 }
 
 .hero{
-    margin-top: 80px;
+    margin-top: 50px;
     width: 100%;
     transition: all .5s ease-in;
     .hero-body{
@@ -87,7 +88,7 @@ nav{
 
         p{
             font-size: 25px;
-            color: #98c1d3;
+            color: #7cffe9;
             font-family: 'Inconsolata', sans-serif;
         }
 
@@ -144,10 +145,35 @@ nav{
             }
         }
     }
+    @media (max-width: 800px) {
+        
+            margin-top: 40px;
+
+            .hero-body {
+                p {
+                    font-size: 20px;
+                }
+
+                h1 {
+                    font-size: 60px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+            
+
+        }
+
+        .tools-icon {
+            display: none;
+        }
+
+    }
 }
 
-.content{
-    margin-top: 100px;
+.content-about{
+    margin-top: 150px;
     font-family: 'Poppins', sans-serif;
     .about-title{
         h1{
@@ -178,36 +204,70 @@ nav{
                 }
             }
         }
+
         }
 
         .about-text{
             color: white;
         }
-        
+        @media (max-width: 800px) {
+           
+            .tools-icon {
+                display: none;
+            }
+
+        }
+}
+
+.content-qualification{
+    margin-top: 150px;
+    font-family: 'poppins', sans-serif;
+    h1{
+        color: white;
+        margin-bottom: 0;
+    }
+
+    h3{
+        color: white;
+        font-family: 'inconsolata', sans-serif;
+        font-size: 17px;
+        margin-top: 0;
+        color: #7cffe9;
+        margin-bottom: 50px;
+    }
+
+    .card{
+        height: 150px;
+        color: white;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+        background: #3A6073;
+        border: none;
+
+           
+
+        .icon {
+            color: #7cffe9;
+            padding-top: 2px;
+        }
+            .title{
+                margin-bottom: 15px;
+                text-align: right;
+                
+            }
+
+            .subtitle{
+                font-family: 'Inconsolata', sans-serif;
+                color: white;
+                text-align: right;
+                p{
+                    margin-bottom: 0;
+                    padding: 0;
+                }
+            }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 800px) {
-    .hero {
-        margin-top: 40px;
-        .hero-body {
-            p {
-                font-size: 20px;
-            }
-
-            h1 {
-                font-size: 60px;
-            }
-
-            h2{
-                font-size: 30px;
-            }
-}
-
-    }
-
-    .tools-icon{
-        display: none;
-    }
-
-}
