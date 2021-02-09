@@ -102,7 +102,7 @@ nav .nav-item .nav-link:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 .hero .social-icons {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .hero .social-icons i {
   color: white;
@@ -125,10 +125,10 @@ nav .nav-item .nav-link:hover {
     font-size: 20px;
   }
   .hero .hero-body h1 {
-    font-size: 60px;
+    font-size: 65px;
   }
   .hero .hero-body h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .hero .tools-icon {
     display: none;
@@ -184,32 +184,38 @@ nav .nav-item .nav-link:hover {
 .content-qualification h3 {
   color: white;
   font-family: "inconsolata", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 0;
   color: #7cffe9;
   margin-bottom: 50px;
 }
 .content-qualification .card {
-  height: 150px;
-  color: white;
+  height: 155px;
+  color: #dfe9f5;
   margin-bottom: 20px;
   display: flex;
   padding: 15px;
   justify-content: center;
-  background: #3A6073;
+  background: rgba(22, 34, 42, 0.5);
   border: none;
+}
+.content-qualification .card:hover {
+  background: rgba(58, 96, 115, 0.9);
 }
 .content-qualification .card .icon {
   color: #7cffe9;
-  padding-top: 2px;
+  position: absolute;
+  top: 35%;
+  left: 10%;
 }
 .content-qualification .card .title {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: right;
+  font-size: 10px;
 }
 .content-qualification .card .subtitle {
   font-family: "Inconsolata", sans-serif;
-  color: white;
+  color: #dfe9f5;
   text-align: right;
 }
 .content-qualification .card .subtitle p {
